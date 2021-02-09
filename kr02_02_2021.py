@@ -89,7 +89,7 @@ def task_4_1(f):
             b.append(m.count('a')**2)
         else:
             continue
-    res = tuple(b))
+    res = tuple(b)
     return res
 
 
