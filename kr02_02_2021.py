@@ -144,8 +144,10 @@ def task_5(lst1, lst2):
         """
 
     diff1 = []
+    l=set(lst2)
+    k=set(lst1)
 
-    d = lst2.intersection(lst1, lst2)
+    d = l.intersection(k, l)
     for i in lst1:
         if i not in d:
             diff1.append(i)
