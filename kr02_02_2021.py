@@ -125,7 +125,7 @@ def task_4_3(f):
 
     b=[]
     c=set()
-    p=['e','u','o','a','i','y']
+   
     q=[]
 
     for i in f:
