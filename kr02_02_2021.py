@@ -33,9 +33,6 @@ def task_3(numbers):
     x = []
     t = {}
     w = 0
-
-
-
     for i in range(len(numbers)):
         if numbers[i] in c:
             continue
@@ -43,9 +40,8 @@ def task_3(numbers):
             x.append(numbers.count(numbers[i]))
             c.append(numbers[i])
     for s in c:
-    t[s] = x[w]
+        t[s] = x[w]
         w += 1
-    
     new_1 = t.copy()
     p = max(new_1.values())
     for i, j in new_1.items():
@@ -71,6 +67,7 @@ def task_3(numbers):
     for o in lst_1:
         dict_min[o] = lst_2[v]
         v += 1
+
     return dict_min
 
 
