@@ -164,7 +164,7 @@ def task_6(c):
         Финальное значение должно быть помещено в переменную res.
         """
     
-    c =[int(i) for i in input().split()]
+    
     d=[]
     for i in c:
         if c.count(i)==1:
