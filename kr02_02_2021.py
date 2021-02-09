@@ -6,12 +6,12 @@ def task_1(two_dim_words):
         Финальное значение должно быть помещено в переменную sorted_words.
         """
    
-sorted_words = []
-for i in two_dim_words:
-    for j in i:
-        sorted_words.append(j)
-sorted_words.sort()
-sorted_words.sort(key=len, reverse=True)
+    sorted_words = []
+    for i in two_dim_words:
+        for j in i:
+            sorted_words.append(j)
+    sorted_words.sort()
+    sorted_words.sort(key=len, reverse=True)
 
 
     return sorted_words
