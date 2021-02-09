@@ -71,7 +71,7 @@ def task_3(numbers):
     for o in lst_1:
         dict_min[o] = lst_2[v]
         v += 1
-    returndict_min
+    return dict_min
 
 
 def task_4_1(f):
