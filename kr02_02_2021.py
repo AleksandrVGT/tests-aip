@@ -43,7 +43,7 @@ def task_3(numbers):
             x.append(numbers.count(numbers[i]))
             c.append(numbers[i])
     for s in c:
-     t[s] = x[w]
+    t[s] = x[w]
         w += 1
     
     new_1 = t.copy()
