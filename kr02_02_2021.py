@@ -23,12 +23,12 @@ def task_3(numbers):
         Переменная numbers - ваша строка чисел.
         Финальное значение должно быть помещено в переменную dict_min.
         """
-        for i in range(len(numbers)):
-        if numbers[i] in c:
-            continue
-        else:
-            x.append(numbers.count(numbers[i]))
-            c.append(numbers[i])
+    for i in range(len(numbers)):
+    if numbers[i] in c:
+        continue
+    else:
+        x.append(numbers.count(numbers[i]))
+        c.append(numbers[i])
     for s in c:
         t[s] = x[w]
         w += 1
