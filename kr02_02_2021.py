@@ -25,7 +25,6 @@ def task_3(numbers):
         """
     c = []
     dict_min = {}
-
     r = 0
     v = 0
     q = 0
@@ -33,7 +32,11 @@ def task_3(numbers):
     z = []
     x = []
     t = {}
+    lst_1 = []
+    lst_2 = []
     w = 0
+
+
     for i in range(len(numbers)):
         if numbers[i] in c:
             continue
@@ -43,34 +46,36 @@ def task_3(numbers):
     for s in c:
         t[s] = x[w]
         w += 1
-   
+
     new_1 = t.copy()
     p = max(new_1.values())
     for i, j in new_1.items():
         if j == p:
             q = i
-            break
+            lst_1.append(i)
+            lst_2.append(j)
     new_2 = t.copy()
     new_2.pop(q)
-    d = max(new_2.values(),default=0)
+    d = max(new_2.values(), default=0)
     for i, j in new_2.items():
         if j == d:
+            lst_1.append(i)
+            lst_2.append(j)
             a = i
-            break
 
     new_3 = new_2.copy()
     new_3.pop(a)
     k = max(new_3.values())
     for i, j in new_3.items():
         if j == k:
-            r = i
-            break
-    
-    lst_1 = [q, a, r]
-    lst_2 = [p, d, k]
+            lst_1.append(i)
+            lst_2.append(j)
+
     for o in lst_1:
         dict_min[o] = lst_2[v]
-        v += 1   
+        v += 1
+
+        
     return dict_min
 
 
