@@ -24,15 +24,15 @@ def task_3(numbers):
         Финальное значение должно быть помещено в переменную dict_min.
         """
     for i in range(len(numbers)):
-    if numbers[i] in c:
-        continue
-    else:
-        x.append(numbers.count(numbers[i]))
-        c.append(numbers[i])
+        if numbers[i] in c:
+            continue
+        else:
+            x.append(numbers.count(numbers[i]))
+            c.append(numbers[i])
     for s in c:
         t[s] = x[w]
         w += 1
-    print(t)
+   
     new_1 = t.copy()
     p = max(new_1.values())
     for i, j in new_1.items():
@@ -54,12 +54,12 @@ def task_3(numbers):
         if j == k:
             r = i
             break
-    print(q,a,r,p,d,k)
+    
     lst_1 = [q, a, r]
     lst_2 = [p, d, k]
     for o in lst_1:
         dict_min[o] = lst_2[v]
-        v += 1
+        v += 1   
     return dict_min
 
 
