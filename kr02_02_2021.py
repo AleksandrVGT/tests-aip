@@ -150,8 +150,8 @@ def task_5(lst1, lst2):
     lst3 = set(lst1)
     lst4 = set(lst2)
     diff = []
-    d = lst2.intersection(lst3, lst4)
-    for i in lst1:
+    d = lst4.intersection(lst3, lst4)
+    for i in lst3:
         if i not in d:
             diff.append(i)
     print(diff)
