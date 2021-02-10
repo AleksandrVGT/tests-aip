@@ -23,6 +23,16 @@ def task_3(numbers):
         Переменная numbers - ваша строка чисел.
         Финальное значение должно быть помещено в переменную dict_min.
         """
+    c = []
+
+    r = 0
+    v = 0
+    q = 0
+    a = 0
+    z = []
+    x = []
+    t = {}
+    w = 0
     for i in range(len(numbers)):
         if numbers[i] in c:
             continue
