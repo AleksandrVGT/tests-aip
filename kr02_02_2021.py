@@ -23,17 +23,7 @@ def task_3(numbers):
         Переменная numbers - ваша строка чисел.
         Финальное значение должно быть помещено в переменную dict_min.
         """
-    c = []
-    dict_min = {}
-    r = 0
-    v = 0
-    q = 0
-    a = 0
-    z = []
-    x = []
-    t = {}
-    w = 0
-    for i in range(len(numbers)):
+        for i in range(len(numbers)):
         if numbers[i] in c:
             continue
         else:
@@ -42,6 +32,7 @@ def task_3(numbers):
     for s in c:
         t[s] = x[w]
         w += 1
+    print(t)
     new_1 = t.copy()
     p = max(new_1.values())
     for i, j in new_1.items():
@@ -55,6 +46,7 @@ def task_3(numbers):
         if j == d:
             a = i
             break
+
     new_3 = new_2.copy()
     new_3.pop(a)
     k = max(new_3.values())
@@ -62,12 +54,12 @@ def task_3(numbers):
         if j == k:
             r = i
             break
-    lst_1 = [q, a, p]
-    lst_2 = [p, d, r]
+    print(q,a,r,p,d,k)
+    lst_1 = [q, a, r]
+    lst_2 = [p, d, k]
     for o in lst_1:
         dict_min[o] = lst_2[v]
         v += 1
-
     return dict_min
 
 
