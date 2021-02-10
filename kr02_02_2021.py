@@ -147,17 +147,16 @@ def task_5(lst1, lst2):
         Финальное значение должно быть помещено в переменную diff.
         """
 
-    diff1 = []
-    l=set(lst2)
-    k=set(lst1)
-
-    d = l.intersection(k, l)
+    
+    diff = []
+    d = lst2.intersection(lst1, lst2)
     for i in lst1:
         if i not in d:
-            diff1.append(i)
-    diff = sorted(diff1)
+            diff.append(i)
+    print(diff)
+    c = sorted(diff)
 
-    return diff
+    return c
 
 
 def task_6(c):
