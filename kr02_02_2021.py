@@ -147,9 +147,10 @@ def task_5(lst1, lst2):
         Финальное значение должно быть помещено в переменную diff.
         """
 
-    
+    lst3 = set(lst1)
+    lst4 = set(lst2)
     diff = []
-    d = lst2.intersection(lst1, lst2)
+    d = lst2.intersection(lst3, lst4)
     for i in lst1:
         if i not in d:
             diff.append(i)
