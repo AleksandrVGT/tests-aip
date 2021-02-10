@@ -52,7 +52,7 @@ def task_3(numbers):
             break
     new_2 = t.copy()
     new_2.pop(q)
-    d = max(new_2.values())
+    d = max(new_2.values(),default=0)
     for i, j in new_2.items():
         if j == d:
             a = i
