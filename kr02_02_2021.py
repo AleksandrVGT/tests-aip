@@ -173,9 +173,7 @@ def task_6(c):
         """
     
     
-    d=[]
-    for i in c:
-        if c.count(i)==1:
-            d.append(i)
-    res = tuple(sorted(d, reverse=True))
+    d = set(c)
+    print(tuple(sorted(d, reverse=True)))
+
     return res
