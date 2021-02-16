@@ -52,15 +52,15 @@ def task_3(numbers):
     for i, j in new_1.items():
         if j == p:
             q = i
-            lst_1.append(i)
-            lst_2.append(j)
+            lst_1.append(int(i))
+            lst_2.append(int(j))
     new_2 = t.copy()
     new_2.pop(q)
     d = max(new_2.values(), default=0)
     for i, j in new_2.items():
         if j == d:
-            lst_1.append(i)
-            lst_2.append(j)
+            lst_1.append(int(i))
+            lst_2.append(int(j))
             a = i
 
     new_3 = new_2.copy()
@@ -68,8 +68,8 @@ def task_3(numbers):
     k = max(new_3.values())
     for i, j in new_3.items():
         if j == k:
-            lst_1.append(i)
-            lst_2.append(j)
+            lst_1.append(int(i))
+            lst_2.append(int(j))
 
     for o in lst_1:
         dict_min[o] = lst_2[v]
