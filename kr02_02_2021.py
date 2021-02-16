@@ -174,6 +174,6 @@ def task_6(c):
     
     
     d = set(c)
-    print(tuple(sorted(d, reverse=True)))
+    res = (tuple(sorted(d, reverse=True)))
 
     return res
