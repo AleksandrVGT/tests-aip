@@ -131,6 +131,15 @@ def task_4_3(f):
     b=[]
     c=set()
     p=['e','u','o','a','i','y']
+    l=0
+    qr=0
+    v=0
+    mm=[]
+    total=[]
+    ar=[]
+    letters_1=0
+    letters_2=0
+    letters_3=0
    
     q=[]
 
@@ -138,11 +147,32 @@ def task_4_3(f):
         l=i.lower()
         if l.endswith('a'):
             for j in l:
-                if j not in p:
-                    q.append(j)
-    res=q
+                if j not in p and v==0 :
+                    letters_1+=1
+                if j not in p and v == 1:
+                        letters_2+=1
+                if j not in p and v == 2:
+                        letters_3 += 1
+            v+=1
+    
 
-    return res
+
+    for i in f:
+        l=i.lower()
+        if l.endswith('a'):
+            for j in l:
+                if j not in p and qr <= letters_1+1:
+                    q.append(j)
+                if j not in p and qr > letters_1 and qr <= (letters_1+letters_2)+1:
+                    mm.append(j)
+                if j not in p and qr > (letters_1+letters_2)+letters_3+1:
+                    ar.append(j)
+                qr+=1
+    total.append(''.join(q))
+    total.append(''.join(mm))
+    total.append(''.join(ar))
+
+    return total
 
 
 def task_5(lst1, lst2):
