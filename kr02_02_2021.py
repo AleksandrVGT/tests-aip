@@ -143,35 +143,39 @@ def task_4_3(f):
    
     q=[]
 
-    for i in f:
-        l=i.lower()
-        if l.endswith('a'):
-            for j in l:
-                if j not in p and v==0 :
-                    letters_1+=1
-                if j not in p and v == 1:
-                        letters_2+=1
-                if j not in p and v == 2:
-                        letters_3 += 1
-            v+=1
     
+    for i in f:
+        l = i.lower()
+        if l.endswith('a'):
+            for j in l:
+                if j not in p and v == 0:
+                    letters_1 += 1
+                if j not in p and v == 1:
+                    letters_2 += 1
+                if j not in p and v == 2:
+                    letters_3 += 1
+            v += 1
 
 
     for i in f:
-        l=i.lower()
+        l = i.lower()
         if l.endswith('a'):
             for j in l:
-                if j not in p and qr <= letters_1+1:
-                    q.append(j)
-                if j not in p and qr > letters_1 and qr <= (letters_1+letters_2)+1:
-                    mm.append(j)
-                if j not in p and qr > (letters_1+letters_2)+letters_3+1:
-                    ar.append(j)
-                qr+=1
+                if j not in p:
+                    if qr < letters_1:
+                        q.append(j)
+
+                    if qr >= letters_1 and qr < (letters_1 + letters_2):
+                        mm.append(j)
+
+                    if qr >= (letters_1 + letters_2):
+                        ar.append(j)
+                    qr += 1
+
     total.append(''.join(q))
     total.append(''.join(mm))
     total.append(''.join(ar))
-
+    print(total)
     return total
 
 
