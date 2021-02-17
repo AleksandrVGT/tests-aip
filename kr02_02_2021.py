@@ -61,7 +61,7 @@ def task_3(numbers):
         if j == d:
             lst_1.append(int(i))
             lst_2.append(int(j))
-            a = int(i)
+            a = i
 
     new_3 = new_2.copy()
     new_3.pop(a)
