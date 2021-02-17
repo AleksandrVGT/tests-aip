@@ -177,10 +177,12 @@ def task_4_3(f):
         q=0
         mm=0
         ar=0
-    total.append(''.join(q))
-    total.append(''.join(mm))
-    total.append(''.join(ar))
-    print(total)
+        total=[]    
+    else:
+        total.append(''.join(q))
+        total.append(''.join(mm))
+        total.append(''.join(ar))
+   
     return total
 
 
