@@ -140,6 +140,7 @@ def task_4_3(f):
     letters_1=0
     letters_2=0
     letters_3=0
+    qrt=0
    
     q=[]
 
@@ -147,6 +148,7 @@ def task_4_3(f):
     for i in f:
         l = i.lower()
         if l.endswith('a'):
+            qrt+=1
             for j in l:
                 if j not in p and v == 0:
                     letters_1 += 1
@@ -171,7 +173,10 @@ def task_4_3(f):
                     if qr >= (letters_1 + letters_2):
                         ar.append(j)
                     qr += 1
-
+     if qrt==0:
+        q=0
+        mm=0
+        ar=0
     total.append(''.join(q))
     total.append(''.join(mm))
     total.append(''.join(ar))
