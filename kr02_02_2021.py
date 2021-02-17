@@ -173,7 +173,7 @@ def task_4_3(f):
                     if qr >= (letters_1 + letters_2):
                         ar.append(j)
                     qr += 1
-     if qrt==0:
+    if qrt==0:
         q=0
         mm=0
         ar=0
